@@ -7,7 +7,7 @@ branches:
     - master
 
 env:
-    - TEST: "{k1: 1}"
+    - "TEST: {k1: 1}"
     
 script:
     - node env.js

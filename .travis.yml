@@ -8,3 +8,6 @@ branches:
 
 env:
     - TEST: "test"
+    
+script:
+    - node env.js

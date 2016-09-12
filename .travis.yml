@@ -9,7 +9,7 @@ branches:
 
 env:
   global:
-    - ENV: get_env_specific_value.sh
+    - ENV: ./get_env_specific_value.sh
     - DEV: $DEVELOP
     - PROD: $PROD
     - TEST1: $($ENV $DEV $PROD)

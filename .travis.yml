@@ -10,4 +10,6 @@ env:
     - TEST: $TEST
     
 script:
-    - node env.js
+script:
+  - if [ "$TRAVIS_BRANCH" = "develop" ]; then process.env.TEST=$develop; fi
+  - node env.js

@@ -11,7 +11,6 @@ before_install:
   - chmod a+x ./get_env_specific_value.sh
 
 env:
-  global:
     - ENV: ./get_env_specific_value.sh
     - DEV: $DEVELOP
     - PROD: $PROD

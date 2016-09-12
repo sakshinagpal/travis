@@ -11,10 +11,10 @@ before_install:
   - chmod a+x ./get_env_specific_value.sh
 
 env:
-    - ENV: ./get_env_specific_value.sh
+    - ENVT: ./get_env_specific_value.sh
     - DEV: $DEVELOP
     - PROD: $PROD
-    - TEST1: $($ENV $DEV $PROD)
+    - TEST1: $($ENVT $DEV $PROD)
     
 script:
   - node env.js

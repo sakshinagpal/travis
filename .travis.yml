@@ -6,6 +6,9 @@ branches:
   only:
     - master
     - develop
+    
+before_install
+  - chmod a+x ./get_env_specific_value.sh
 
 env:
   global:
@@ -14,6 +17,5 @@ env:
     - PROD: $PROD
     - TEST1: $($ENV $DEV $PROD)
     
-script:
 script:
   - node env.js

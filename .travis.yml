@@ -12,7 +12,7 @@ env:
     - ENV= get_env_specific_value.sh
     - DEV: $DEVELOP
     - PROD: $PROD
-    - TEST= $($ENV $DEV $PROD)
+    - TEST1= $($ENV $DEV $PROD)
     
 script:
 script:

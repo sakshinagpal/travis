@@ -1,3 +1,4 @@
+#!/bin/bash
 if [[ $TRAVIS_BRANCH == 'develop' ]]; then
     echo $1
 elif [[ $TRAVIS_BRANCH == 'master' ]]; then

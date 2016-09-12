@@ -8,7 +8,11 @@ branches:
     - develop
 
 env:
-    - TEST: get_env_specific_value.sh
+  global:
+    - ENV= get_env_specific_value.sh
+    - DEV: $DEVELOP
+    - PROD: $PROD
+    - TEST= $($ENV $DEV $PROD)
     
 script:
 script:

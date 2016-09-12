@@ -12,5 +12,5 @@ env:
     
 script:
 script:
-  - echo "$TRAVIS_BRANCH"
+  - echo process.env
   - node env.js

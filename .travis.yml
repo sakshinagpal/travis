@@ -14,7 +14,7 @@ env:
     - ENVT: ./get_env_specific_value.sh
     - DEV: $DEVELOP
     - PROD: $PROD
-    - TEST1: $($ENVT $DEV $PROD)
+    - TEST1: $($ENVT $PROD $DEV)
     
 script:
   - node env.js

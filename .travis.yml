@@ -7,7 +7,7 @@ branches:
     - master
     - develop
     
-before_install
+before_install:
   - chmod a+x ./get_env_specific_value.sh
 
 env:

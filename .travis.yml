@@ -8,9 +8,8 @@ branches:
     - develop
 
 env:
-    - TEST: $TEST
+    - TEST: get_env_specific_value.sh
     
 script:
 script:
-  - echo process.env
   - node env.js
